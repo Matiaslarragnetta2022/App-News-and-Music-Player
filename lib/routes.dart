@@ -4,6 +4,7 @@ import 'package:music_player_app/noticias/noticias_screen.dart';
 import 'package:music_player_app/noticias/tabs1_page.dart';
 
 import 'QR/qr_screen.dart';
+import 'Sliders/slideshow_page.dart';
 import 'botomBar/bottom_bar.dart';
 import 'home/home.dart';
 import 'noticias/widgets/tabs2_page.dart';
@@ -46,7 +47,12 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
         settings: routeSettings,
         builder: (_) =>  MapaPage(),
       );
-   
+
+       case SlideshowPage.routeName:
+      return MaterialPageRoute(
+        settings: routeSettings,
+        builder: (_) =>  const SlideshowPage(),
+      );
    
 
     default:

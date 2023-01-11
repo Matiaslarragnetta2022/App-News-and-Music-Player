@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../QR/qr_screen.dart';
+import 'package:music_player_app/water%20flow/water.dart';
+import '../Sliders/slideshow_page.dart';
 import '../home/home.dart';
 import '../noticias/noticias_screen.dart';
 import '../music/music_player.dart';
@@ -24,8 +24,8 @@ class _BottomBarState extends State<BottomBar> {
     const HomeScreen(),
     const MusicPlayerScreen(),
     const NoticiasScreen(),
-    const QrScreen(),
-    const HomeScreen(),
+    const WaterFlowAnimation(),
+    const SlideshowPage(),
   ];
 
   void updatePage(int page) {
